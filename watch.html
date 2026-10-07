@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#080a09" />
+  <title>Atelier Horloger — Time, in its purest form</title>
+  <meta name="description" content="An immersive, scroll-driven study in watchmaking precision." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="watch.css" />
+</head>
+<body>
+  <header class="watch-nav">
+    <a href="#top" class="wordmark">ATELIER <span>HORLOGER</span></a>
+    <a class="nav-link" href="#craft">The collection <span>↗</span></a>
+  </header>
+  <main>
+    <section id="top" class="intro">
+      <p class="eyebrow">A study in precision&nbsp; · &nbsp;No. 01</p>
+      <h1>Time, in<br /><em>its purest form.</em></h1>
+      <p class="deck">An instrument shaped by patience.<br />A new perspective with every passing moment.</p>
+      <a class="scroll-cue" href="#animation"><i></i> Scroll to discover</a>
+    </section>
+    <section id="animation" class="animation-scroll" aria-label="Scroll to explore the watch">
+      <div class="sticky-stage">
+        <canvas id="watchCanvas" aria-label="Watch product animation"></canvas>
+        <div class="vignette"></div>
+      </div>
+    </section>
+    <section id="craft" class="outro">
+      <p class="eyebrow">Made to endure</p>
+      <h2>Every detail.<br /><em>Considered.</em></h2>
+      <p>Precision is not a moment. It is a thousand deliberate decisions, brought together in a form that feels inevitable.</p>
+      <a href="#top" class="cta">Discover the collection <span>↗</span></a>
+      <footer>ATELIER HORLOGER <i>·</i> SWISS MADE</footer>
+    </section>
+  </main>
+  <script src="watch-animation.js"></script>
+</body>
+</html>

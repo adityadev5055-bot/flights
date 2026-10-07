@@ -1,0 +1,6 @@
+{
+  "name": "Flights.com - Book Flights Easier, Faster, Smarter",
+  "description": "Search and book flights easier, faster, and smarter with real-time routing, transparent pricing, and instant reservation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,55 @@
+.watch-page {
+  --watch-ink: #e9e5dc;
+  --watch-muted: #98958d;
+  --watch-accent: #b49a72;
+  min-height: 100vh;
+  overflow: clip;
+  background: #080a09;
+  color: var(--watch-ink);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+.watch-nav {
+  position: absolute;
+  z-index: 5;
+  top: 0; left: 0; right: 0;
+  height: 82px;
+  padding: 0 clamp(24px, 6vw, 96px);
+  display: flex; align-items: center; justify-content: space-between;
+  border-bottom: 1px solid rgba(233,229,220,.1);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.watch-wordmark { color: var(--watch-ink); text-decoration: none; font-size: 11px; font-weight: 600; letter-spacing: .23em; }
+.watch-wordmark span { color: var(--watch-muted); font-weight: 400; }
+.watch-nav-link { color: var(--watch-ink); text-decoration: none; font-size: 11px; letter-spacing: .08em; }
+.watch-nav-link span, .watch-cta span { margin-left: 10px; color: var(--watch-accent); }
+.watch-intro {
+  height: 100svh; min-height: 650px; position: relative;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-align: center; padding: 90px 24px 56px;
+  background: radial-gradient(ellipse at 50% 62%, rgba(63,60,49,.20), transparent 52%);
+}
+.watch-eyebrow { margin: 0; color: var(--watch-accent); font-family: 'Plus Jakarta Sans', sans-serif; font-size: 9px; letter-spacing: .28em; text-transform: uppercase; }
+.watch-intro h1, .watch-outro h2 { margin: 30px 0 18px; font-size: clamp(58px, 8.7vw, 124px); font-weight: 300; letter-spacing: -.045em; line-height: .86; }
+.watch-intro h1 em, .watch-outro h2 em { color: var(--watch-accent); font-weight: 300; }
+.watch-deck { color: #b5b1a8; font-size: clamp(17px, 2vw, 22px); font-weight: 300; line-height: 1.45; }
+.watch-cue { position: absolute; bottom: 45px; display: flex; align-items: center; gap: 12px; color: var(--watch-muted); text-decoration: none; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 9px; letter-spacing: .18em; text-transform: uppercase; }
+.watch-cue span { display: block; width: 1px; height: 27px; background: var(--watch-accent); animation: watch-cue 1.8s ease-in-out infinite; transform-origin: top; }
+@keyframes watch-cue { 0%,100% { transform: scaleY(.45); opacity: .45 } 50% { transform: scaleY(1); opacity: 1 } }
+.watch-scroll-section { position: relative; background: #080a09; }
+.watch-sticky-stage { position: sticky; top: 0; width: 100%; height: 100svh; overflow: hidden; background: #080a09; }
+.watch-canvas { display: block; width: 100%; height: 100%; }
+.watch-vignette { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(ellipse at center, transparent 46%, rgba(0,0,0,.38) 100%), linear-gradient(180deg, #080a09 0%, transparent 20%, transparent 80%, #080a09 100%); }
+.watch-outro { min-height: 100svh; padding: 18vh 24px 40px; display: flex; flex-direction: column; align-items: center; text-align: center; background: radial-gradient(ellipse at 50% 30%, rgba(63,60,49,.17), transparent 55%); }
+.watch-outro h2 { font-size: clamp(56px, 8vw, 110px); margin-bottom: 24px; }
+.watch-outro > p:not(.watch-eyebrow) { max-width: 430px; color: #aaa69e; font-size: 19px; line-height: 1.5; font-weight: 300; }
+.watch-cta { margin-top: 30px; padding: 16px 22px; border: 1px solid rgba(180,154,114,.56); color: var(--watch-ink); text-decoration: none; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 10px; letter-spacing: .12em; text-transform: uppercase; }
+.watch-outro footer { margin-top: auto; padding-top: 80px; color: #716e67; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 8px; letter-spacing: .22em; }
+.watch-outro footer span { padding: 0 8px; color: var(--watch-accent); }
+@media (max-width: 640px) {
+  .watch-nav { height: 68px; padding: 0 22px; }
+  .watch-wordmark { font-size: 9px; letter-spacing: .15em; }
+  .watch-nav-link { font-size: 10px; }
+  .watch-intro { min-height: 560px; }
+  .watch-intro h1 { font-size: clamp(54px, 14vw, 82px); }
+}
+@media (prefers-reduced-motion: reduce) { .watch-cue span { animation: none; } }

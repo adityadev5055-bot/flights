@@ -1,6 +1,0 @@
-{
-  "name": "VentureTravel Agency - Licensed Luxury Expeditions & Wilderness Journeys",
-  "description": "Accredited travel agency specializing in tailor-made expeditions, Never Explored India journeys, luxury wilderness retreats, and licensed mountain guides.",
-  "requestFramePermissions": ["geolocation"],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
